@@ -27,7 +27,7 @@ mvn install:install-file -Dfile="C:\Program Files (x86)\HPE\LeanFT\SDK\Java\com.
 These commands put the LeanFT JARS in the local maven repository
 
 
-#Maven Jars:
+# Maven_Jars
 
 We have 2 possible scenarios 1) Corporate environment no access to Maven 2)access to Maven. If we have access to maven no need to keep system scope. we can go ahead with maven central repo.
 
