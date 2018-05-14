@@ -32,6 +32,7 @@ These commands put the LeanFT JARS in the local maven repository
 We have 2 possible scenarios 1) Corporate environment no access to Maven 2)access to Maven. If we have access to maven no need to keep system scope. we can go ahead with maven central repo.
 
 1)We have no access to Maven central repo:
+
 a) Download all the Jar/dependency from Maven central
 b) Move those to target system.
 c) Run above mentioned similar commands based on respective dependecy and version.
