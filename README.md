@@ -39,9 +39,9 @@ c) Run above mentioned similar commands based on respective dependecy and versio
 
 For sample Cucumber project below dependecies need to be added
 
-info.cukes.gherkin
-info.cukes.cucumber-junit
-info.cukes.cucumber-java
-info.cukes.cucumber-core
-info.cukes.cucumber-jvm-deps
-Junit
+info.cukes.gherkin;
+info.cukes.cucumber-junit;
+info.cukes.cucumber-java;
+info.cukes.cucumber-core;
+info.cukes.cucumber-jvm-deps;
+Junit;
