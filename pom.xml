@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.l2a</groupId>
+  <artifactId>cucumber-template</artifactId>
+  <version>0.0.1</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>jar</packaging>
+
+  <name>cucumber-template</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>4.12</version>
+          <scope>test</scope>
+          <systemPath>C:/Users/Rao/.m2/repository/junit/junit/4.12/junit-4.12.jar</systemPath>
+	    </dependency>
+   
+        <dependency>
+            <groupId>com.hp.lft</groupId>
+            <artifactId>sdk</artifactId>
+            <version>14.3.0</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/com/hp/lft/sdk/14.3.0/sdk-14.3.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hp.lft</groupId>
+            <artifactId>report</artifactId>
+            <version>14.3.0</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/com/hp/lft/report/14.3.0/report-14.3.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hp.lft</groupId>
+            <artifactId>unittesting</artifactId>
+            <version>14.3.0</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/com/hp/lft/unittesting/14.3.0/unittesting-14.3.0.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hp.lft</groupId>
+            <artifactId>verifications</artifactId>
+            <version>14.3.0</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/com/hp/lft/verifications/14.3.0/verifications-14.3.0.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.17</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/org/apache/poi/poi/3.17/poi-3.17.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>3.9</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/com/opencsv/opencsv/3.9/opencsv-3.9.jar</systemPath>
+		</dependency>
+	
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.4</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.jar</systemPath>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>		
+			<version>1.2.4</version>
+            <scope>system</scope>
+            <systemPath>C:/Users/Rao/.m2/repository/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar</systemPath>
+		</dependency>
+      <dependency>
+          <groupId>info.cukes</groupId>
+          <artifactId>cucumber-core</artifactId>
+          <version>1.2.4</version>
+          <scope>system</scope>
+          <systemPath>C:/Users/Rao/.m2/repository/info/cukes/cucumber-core/1.2.4/cucumber-core-1.2.4.jar</systemPath>
+      </dependency>
+
+      <dependency>
+          <groupId>info.cukes</groupId>
+          <artifactId>gherkin</artifactId>
+          <version>2.12.2</version>
+          <scope>system</scope>
+          <systemPath>C:/Users/Rao/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar</systemPath>
+      </dependency>
+
+      <dependency>
+          <groupId>info.cukes</groupId>
+          <artifactId>cucumber-jvm-deps</artifactId>
+          <version>1.0.5</version>
+          <scope>system</scope>
+          <systemPath>C:/Users/Rao/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar</systemPath>
+      </dependency>
+  </dependencies>
+</project>
