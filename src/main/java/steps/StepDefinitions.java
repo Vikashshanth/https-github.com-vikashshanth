@@ -2,7 +2,7 @@ package steps;
 
 import java.io.IOException;
 
-import com.hp.lft.sdk.GeneralLeanFtException;
+import com.hp.lft.sdk.*;
 import com.hp.lft.sdk.web.Browser;
 
 import cucumber.api.java.After;
@@ -16,13 +16,13 @@ import utils.LogHelper;
 import utils.PropertiesManager;
 
 import com.hp.lft.report.Reporter;
-import com.hp.lft.sdk.ModifiableSDKConfiguration;
-import com.hp.lft.sdk.SDK;
-import org.junit.Assert;
+import org.junit.*;
 
 import java.net.URI;
 
 public class StepDefinitions{
+	public double result;
+	public static Aut aut;
 	
 public static Browser browser;
 	
@@ -38,7 +38,7 @@ public static Browser browser;
 			
 		} catch (Exception e) {			
 			e.printStackTrace();
-			org.junit.Assert.fail(e.getMessage());
+			Assert.fail(e.getMessage());
 		}
 	}
 	
@@ -49,19 +49,24 @@ public static Browser browser;
 		SDK.init(config);
 		Reporter.init();
 		//Launch Browser
-		browser = LeanFTHelper.launchBrowser();
+//		browser = LeanFTHelper.launchBrowser();
 	}
 	
 	@After 
 	public void closeBrowser() throws GeneralLeanFtException, InterruptedException
 	{		
-		browser.close();
-		Thread.sleep(1000);
+		try{
+			if(browser.exists())
+				browser.close();
+		} catch(NullPointerException e) {
+			Thread.sleep(1000);
+		}
 	}
 	
 	@Given("^User is on \"([^\"]*)\" Page$")
 	public void user_is_on_Page(String page) throws Throwable {
-		
+		//Launch Browser
+		browser = LeanFTHelper.launchBrowser();
 		HomePage HP = new HomePage(browser,LogHelper.logger);
 		
 		switch(page.toUpperCase())
@@ -97,6 +102,31 @@ public static Browser browser;
 	public void logout_should_be_successful() throws Throwable {
 		HomePage HP = new HomePage(browser,LogHelper.logger);
 	    Assert.assertTrue(HP.isLoggedOut());
+	}
+
+	@Given("^Calculator desktop application is available$")
+	public void calculatorDesktopApplicationIsAvailable() throws Throwable {
+		 Aut aut = Desktop.launchAut("calc.exe");
+		System.out.println("Implement pending code");
+	}
+
+	@When("^user performs \"([^\"]*)\" on \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void userPerformsOnAnd(String arg0, double arg1, double arg2) throws Throwable {
+
+		switch(arg0)
+		{
+			case "Add":
+				double result = arg1+arg2;
+//			default:
+//				System.out.println("Implement me");
+		}
+	}
+
+	@Then("^Validates the Results$")
+	public void validatesTheResults() throws Throwable {
+//		Assert.assertEquals(5,result);
+		System.out.println("Implement me");
+
 	}
 
 }

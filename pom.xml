@@ -32,7 +32,7 @@
 	      <groupId>junit</groupId>
 	      <artifactId>junit</artifactId>
 	      <version>4.12</version>
-          <scope>test</scope>
+          <scope>system</scope>
           <systemPath>C:/Users/Rao/.m2/repository/junit/junit/4.12/junit-4.12.jar</systemPath>
 	    </dependency>
    
